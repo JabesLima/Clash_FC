@@ -8,7 +8,7 @@ const VITE_API_KEY ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTA
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Clash_FC",
+  // base: "/Clash_FC",
   server: {
     proxy: {
       '/api': {
