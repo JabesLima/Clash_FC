@@ -1,0 +1,67 @@
+.Guerra {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 0 0 15px 5px rgba(255, 69, 0, 0.6), 
+                0 0 30px 10px rgba(255, 140, 0, 0.5), 
+                0 0 50px 15px rgba(255, 255, 0, 0.4);
+    
+    animation: fireAnimation 1.5s ease-in-out infinite;
+}
+
+@keyframes fireAnimation {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(255, 69, 0, 0.6), 
+                    0 0 30px 10px rgba(255, 140, 0, 0.5), 
+                    0 0 50px 15px rgba(255, 255, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 25px 10px rgba(255, 69, 0, 0.8), 
+                    0 0 50px 15px rgba(255, 140, 0, 0.7), 
+                    0 0 75px 20px rgba(255, 255, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px 5px rgba(255, 69, 0, 0.6), 
+                    0 0 30px 10px rgba(255, 140, 0, 0.5), 
+                    0 0 50px 15px rgba(255, 255, 0, 0.4);
+    }
+}
+
+
+.Logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Logos img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.Logos .x {
+    font-size: 60px; 
+    margin: 0 20px; 
+    font-weight: bold;
+    color: #eb3717; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: inline-block;
+}
+
+.Card_guerra strong{
+    color: #2f4f4f;
+    font-size: 19px;
+}
+.Card_guerra p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: bold;
+    margin: 8px 0;
+    color: #df0902;
+}

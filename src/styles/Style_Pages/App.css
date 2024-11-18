@@ -1,0 +1,86 @@
+.Principal{
+    background-color: rgb(255, 255, 255);
+    max-width: 1500px;
+    width: 98%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #704c3b;
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo ao longo da linha, um à esquerda, outro à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 0 10px;
+}
+
+header h1{
+    color: black;
+    padding: 10px;
+    margin-right: 40px;
+    text-align: center;
+    flex-grow: 1;
+    text-shadow: 0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 10px cyan,
+    0 0 10px cyan;
+}
+
+i{
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.menu{
+    position: fixed;
+    background-color:  rgb(212, 216, 214);
+    width: 300px;
+    height: 100vh;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1px; */
+}
+
+.menu ul button{
+    cursor: pointer;
+    width: 99%;
+    margin: 1px;
+}
+.menu ul button:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    color: white;
+}
+
+.menu ul button li{
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.menu ul button li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px){
+    header h1{
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    i{
+        color: white;
+        padding-left: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

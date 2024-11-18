@@ -1,0 +1,138 @@
+.Menssagens{
+    padding: 10px;
+    text-align: center;
+    h1{
+        padding: 30px;
+    }
+    & p{
+        padding-top: 10px;
+    }
+}
+.Menssagens .BemVindo{
+    p{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        hyphens: auto;
+        line-height: 1.8;
+    }
+}
+.Menssagens .Regras_do_cla{
+    padding: 20px;
+    p{
+        border: solid #583d30;
+        padding: 30px;
+        font-size: 20px;
+    }
+    h4{
+        color: red;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+.Menssagens hr{
+    background-color: #704c3b;
+    padding: 1px;
+}
+.inforCla{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.Consiferacoes_final{
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: #583d30;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+@media (max-width: 600px) {
+    .Menssagens{
+        padding: 10px;
+        text-align: center;
+        h1{
+            padding: 30px;
+            font-size: 1px;
+        }
+        & p{
+            padding-top: 10px;
+        }
+    }
+    .Menssagens .BemVindo{
+        h1{
+            white-space: nowrap;
+            font-size: clamp(10px, 5vw, 20px);
+        }
+        p{
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            font-size: clamp(5px, 4vw, 20px);
+            color: #583d30;
+            hyphens: auto;
+        }
+    }
+    .Menssagens .Regras_do_cla{
+        padding: 20px;
+        h1{
+            font-size: clamp(5px, 5vw, 20px);
+        }
+        p{
+            border: solid #583d30;
+            padding: 30px;
+            font-size: clamp(5px, 4vw, 20px);
+        }
+        h4{
+            color: red;
+            font-size: clamp(5px, 4vw, 20px);
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }  
+    .Menssagens hr{
+        background-color: #704c3b;
+        padding: 1px;
+    }  
+    .inforCla{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }    
+    .Consiferacoes_final{
+        width: 80%;
+        margin: auto;
+        font-size: clamp(5px, 4vw, 20px);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 1.8;
+        text-align: center;
+    }
+    .clash footer{
+        background-color: #583d30;
+        color: aliceblue;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

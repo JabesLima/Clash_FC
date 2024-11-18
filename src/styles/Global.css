@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url("../imgs/Fotos_global/LoginCL.png");
+    /* background-attachment: fixed; */
+    background-attachment: scroll; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
