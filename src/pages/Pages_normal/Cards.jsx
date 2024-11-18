@@ -44,9 +44,11 @@ export default function Cards() {
     const [date, setDate] = useState("Carregrando...");
     const [procurar, setProcurar] = useState("")
     const [loading, setLoading] = useState(true);
+    const clanTag = '#LOV8UVO2';
+    const encodedTag = encodeURIComponent(clanTag);
 
     useEffect(() => {
-      axios.get("/api/clans/%232LOV8UVO2/members")
+      axios.get(`/api/clans/${encodedTag}/members`)
         .then(response => {
           setDate(response.data);
           setLoading(false);
